@@ -1,7 +1,7 @@
 <?php
 declare(strict_types=1);
 
-namespace Skernl\Contract;
+namespace Skernl\Contract\Logger;
 
 use Psr\Log\LoggerInterface as PsrLoggerInterface;
 use Skernl\Contract\Exception\Logger\InvalidArgumentExceptionInterface;

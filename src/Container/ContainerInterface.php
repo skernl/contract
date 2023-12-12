@@ -1,7 +1,7 @@
 <?php
 declare(strict_types=1);
 
-namespace Skernl\Contract;
+namespace Skernl\Contract\Container;
 
 use Psr\Container\ContainerExceptionInterface;
 use Psr\Container\ContainerInterface as PsrContainer;
@@ -9,6 +9,7 @@ use Psr\Container\NotFoundExceptionInterface;
 
 /**
  * Describes the interface of a container that exposes methods to read its entries.
+ *
  * @ContainerInterface
  * @\Skernl\Contract\ContainerInterface
  */

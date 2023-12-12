@@ -1,9 +1,8 @@
 <?php
 declare(strict_types=1);
 
-namespace Skernl\Contract;
+namespace Skernl\Contract\Cache;
 
-use Skernl\Contract\CacheItemInterface;
 use Psr\Cache\CacheItemPoolInterface as PsrCacheItemPoolInterface;
 use Psr\Cache\InvalidArgumentException;
 

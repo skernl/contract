@@ -1,7 +1,7 @@
 <?php
 declare(strict_types=1);
 
-namespace Skernl\Contract\Exception\Cache;
+namespace Skernl\Contract\Cache\Exception;
 
 /**
  * Exception interface for invalid cache arguments.
