@@ -4,6 +4,7 @@ declare(strict_types=1);
 namespace Skernl\Contract\HttpMessage;
 
 use Psr\Http\Message\UriInterface as PsrUriInterface;
+use Skernl\Contract\HttpMessage\Exception\InvalidArgumentException;
 
 /**
  * Value object representing a URI.
@@ -118,7 +119,7 @@ interface UriInterface extends PsrUriInterface
      *
      * The path can either be empty or absolute (starting with a slash) or
      * rootless (not starting with a slash). Implementations MUST support all
-     * three syntaxes.
+     * three syntax's.
      *
      * Normally, the empty path "" and absolute path "/" are considered equal as
      * defined in RFC 7230 Section 2.7.3. But this method MUST NOT automatically
@@ -152,7 +153,7 @@ interface UriInterface extends PsrUriInterface
      * any characters. To determine what characters to encode, please refer to
      * RFC 3986, Sections 2 and 3.4.
      *
-     * As an example, if a value in a key/value pair of the query string should
+     * As an example, if a value in a key/value a pair of the query string should
      * include an ampersand ("&") not intended as a delimiter between values,
      * that value MUST be passed in encoded form (e.g., "%26") to the instance.
      *
@@ -193,7 +194,7 @@ interface UriInterface extends PsrUriInterface
      *
      * @param string $scheme The scheme to use with the new instance.
      * @return static A new instance with the specified scheme.
-     * @throws \InvalidArgumentException for invalid or unsupported schemes.
+     * @throws InvalidArgumentException for invalid or unsupported schemes.
      */
     public function withScheme(string $scheme): UriInterface;
 
@@ -207,7 +208,7 @@ interface UriInterface extends PsrUriInterface
      * user; an empty string for the user is equivalent to removing user
      * information.
      *
-     * @param string $user The user name to use for authority.
+     * @param string $user The username to use for authority.
      * @param null|string $password The password associated with $user.
      * @return static A new instance with the specified user information.
      */
@@ -223,7 +224,7 @@ interface UriInterface extends PsrUriInterface
      *
      * @param string $host The hostname to use with the new instance.
      * @return static A new instance with the specified host.
-     * @throws \InvalidArgumentException for invalid hostnames.
+     * @throws InvalidArgumentException for invalid hostnames.
      */
     public function withHost(string $host): UriInterface;
 
@@ -242,7 +243,7 @@ interface UriInterface extends PsrUriInterface
      * @param null|int $port The port to use with the new instance; a null value
      *     removes the port information.
      * @return static A new instance with the specified port.
-     * @throws \InvalidArgumentException for invalid ports.
+     * @throws InvalidArgumentException for invalid ports.
      */
     public function withPort(?int $port): UriInterface;
 
@@ -254,7 +255,7 @@ interface UriInterface extends PsrUriInterface
      *
      * The path can either be empty or absolute (starting with a slash) or
      * rootless (not starting with a slash). Implementations MUST support all
-     * three syntaxes.
+     * three syntax's.
      *
      * If the path is intended to be domain-relative rather than path relative then
      * it must begin with a slash ("/"). Paths not starting with a slash ("/")
@@ -266,7 +267,7 @@ interface UriInterface extends PsrUriInterface
      *
      * @param string $path The path to use with the new instance.
      * @return static A new instance with the specified path.
-     * @throws \InvalidArgumentException for invalid paths.
+     * @throws InvalidArgumentException for invalid paths.
      */
     public function withPath(string $path): UriInterface;
 
@@ -283,7 +284,7 @@ interface UriInterface extends PsrUriInterface
      *
      * @param string $query The query string to use with the new instance.
      * @return static A new instance with the specified query string.
-     * @throws \InvalidArgumentException for invalid query strings.
+     * @throws InvalidArgumentException for invalid query strings.
      */
     public function withQuery(string $query): UriInterface;
 

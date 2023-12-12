@@ -3,8 +3,11 @@ declare(strict_types=1);
 
 namespace Skernl\Contract\Cache;
 
-use Psr\Cache\CacheItemPoolInterface as PsrCacheItemPoolInterface;
-use Psr\Cache\InvalidArgumentException;
+use Psr\Cache\{
+    CacheItemInterface,
+    CacheItemPoolInterface as PsrCacheItemPoolInterface,
+    InvalidArgumentException,
+};
 
 /**
  * CacheItemPoolInterface generates CacheItemInterface objects.
@@ -14,6 +17,7 @@ use Psr\Cache\InvalidArgumentException;
  * It is also the primary point of interaction with the entire cache collection.
  * All configuration and initialization of the Pool is left up to an
  * Implementing Library.
+ *
  * @CacheItemPoolInterface
  * @\Skernl\Contract\CacheItemPoolInterface
  */

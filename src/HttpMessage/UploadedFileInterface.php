@@ -4,8 +4,10 @@ declare(strict_types=1);
 namespace Skernl\Contract\HttpMessage;
 
 use Psr\Http\Message\UploadedFileInterface as PsrUploadedFileInterface;
-use Skernl\Contract\HttpMessage\Exception\InvalidArgumentException;
-use Skernl\Contract\HttpMessage\Exception\RuntimeException;
+use Skernl\Contract\HttpMessage\Exception\{
+    InvalidArgumentException,
+    RuntimeException,
+};
 
 /**
  * Value object representing a file uploaded through an HTTP request.

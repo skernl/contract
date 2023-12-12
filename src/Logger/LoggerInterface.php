@@ -4,7 +4,7 @@ declare(strict_types=1);
 namespace Skernl\Contract\Logger;
 
 use Psr\Log\LoggerInterface as PsrLoggerInterface;
-use Skernl\Contract\Exception\Logger\InvalidArgumentExceptionInterface;
+use Skernl\Contract\Logger\Exception\InvalidArgumentExceptionInterface;
 use Stringable;
 
 /**

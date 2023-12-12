@@ -61,7 +61,7 @@ interface StreamInterface extends PsrStreamInterface
      * Returns the current position of the file read/write pointer
      *
      * @return int Position of the file pointer
-     * @throws \RuntimeException on error.
+     * @throws RuntimeException on error.
      */
     public function tell(): int;
 
@@ -117,7 +117,7 @@ interface StreamInterface extends PsrStreamInterface
      *
      * @param string $string The string that is to be written.
      * @return int Returns the number of bytes written to the stream.
-     * @throws \RuntimeException on failure.
+     * @throws RuntimeException on failure.
      */
     public function write(string $string): int;
 

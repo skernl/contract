@@ -3,8 +3,10 @@ declare(strict_types=1);
 
 namespace Skernl\Contract\HttpMessage;
 
-use Psr\Http\Message\MessageInterface as PsrMessageInterface;
-use Psr\Http\Message\StreamInterface;
+use Psr\Http\Message\{
+    MessageInterface as PsrMessageInterface,
+    StreamInterface,
+};
 use Skernl\Contract\HttpMessage\Exception\InvalidArgumentException;
 
 /**

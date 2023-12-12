@@ -3,9 +3,11 @@ declare(strict_types=1);
 
 namespace Skernl\Contract\Container;
 
-use Psr\Container\ContainerExceptionInterface;
-use Psr\Container\ContainerInterface as PsrContainer;
-use Psr\Container\NotFoundExceptionInterface;
+use Psr\Container\{
+    ContainerExceptionInterface,
+    ContainerInterface as PsrContainer,
+    NotFoundExceptionInterface,
+};
 
 /**
  * Describes the interface of a container that exposes methods to read its entries.
