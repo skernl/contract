@@ -1,7 +1,7 @@
 <?php
 declare(strict_types=1);
 
-namespace Skernl\Contract\Container;
+namespace Skernl\Contract;
 
 use Psr\Container\{
     ContainerExceptionInterface,
