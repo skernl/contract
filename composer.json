@@ -1,6 +1,12 @@
 {
     "name": "skernl/contract",
     "type": "library",
+    "keywords": [
+        "php",
+        "swoole",
+        "framework",
+        "skernl"
+    ],
     "license": "MIT",
     "autoload": {
         "psr-4": {
@@ -11,6 +17,10 @@
         {
             "name": "wheakerd",
             "email": "wheakerd@qq.com"
+        },
+        {
+            "name": "wheakerd",
+            "email": "wheakerd@gmail.com"
         }
     ],
     "minimum-stability": "stable",
