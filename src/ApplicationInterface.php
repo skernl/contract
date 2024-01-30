@@ -12,4 +12,5 @@ namespace Skernl\Contract;
  */
 interface ApplicationInterface
 {
+    public function run(): void;
 }
